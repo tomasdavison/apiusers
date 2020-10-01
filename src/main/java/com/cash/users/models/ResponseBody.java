@@ -18,6 +18,7 @@ public class ResponseBody<T> {
     }
 
     private ResponseBody(List<String> errors, T data) {
+        this.hasError = true;
         this.errors = errors;
         this.data = data;
     }
